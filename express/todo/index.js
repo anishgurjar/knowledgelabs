@@ -1,7 +1,15 @@
 const express = require("express");
 const app = express();
 
+app.use(cors());
+app.use(helmet());
 app.use(express.json());
+
+//custom logger middleware
+app.use((req, res, next) => {
+    console.log(`${req.method} ${req.url}`);
+    //call next here if needed
+})
 
 let todo = [];
 

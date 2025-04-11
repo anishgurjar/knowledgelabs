@@ -1,5 +1,5 @@
 {
-  "name": "todo",
+  "name": "authentication",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,9 @@
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "express": "^5.1.0",
-    "helmet": "^8.1.0"
+    "helmet": "^8.1.0",
+    "uuid": "^11.1.0"
   }
 }
