@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 const ObjectID = mongoose.SchemaTypes.ObjectId;
 require('dotenv').config();
 
-async function conenctDB(){
+async function connectDB(){
     try{
         console.log(process.env.MONGO_URI);
         await mongoose.connect(process.env.MONGO_URI);
@@ -29,4 +29,4 @@ const todos = new Schema({
 const UserModel = mongoose.model('users', users)
 const TodoModel = mongoose.model('todos', todos)
 
-module.exports = {UserModel, TodoModel, conenctDB}
+module.exports = {UserModel, TodoModel, connectDB}
