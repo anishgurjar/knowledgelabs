@@ -1,0 +1,2 @@
+### Pomodoro Coach
+This project is essentially just a Pomodoro timer with an inspirational quote that's bought from an LLM. I only did this to solidify my understanding of state props and effect in React and just to get some hands-down practice. 

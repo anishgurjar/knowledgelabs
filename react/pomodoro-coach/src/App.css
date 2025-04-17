@@ -1,0 +1,152 @@
+.session-table-wrapper {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+}
+
+.session-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1d1d1f;
+  font-weight: 600;
+  letter-spacing: -0.75px;
+}
+
+.session-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: transparent;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.session-table th,
+.session-table td {
+  padding: 16px 24px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 1.1rem;
+  color: #1d1d1f;
+  font-weight: 500;
+}
+
+.session-table th {
+  background-color: rgba(0, 0, 0, 0.02);
+  font-weight: 600;
+  color: #1d1d1f;
+  text-transform: none;
+  font-size: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.session-table tr:hover {
+  background-color: rgba(0, 0, 0, 0.01);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.session-table tr:last-child td {
+  border-bottom: none;
+}
+
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 3rem;
+  max-width: 400px;
+  border-radius: 28px;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.timer-display {
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color: #1d1d1f;
+  margin-bottom: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+}
+
+.timer-digits {
+  width: 90px;
+  display: inline-block;
+  text-align: center;
+}
+
+.timer-colon {
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+}
+
+.timer-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.timer-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  background-color: #0071e3;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+}
+
+.timer-btn:hover {
+  background-color: #0077ed;
+  transform: scale(1.03);
+}
+
+.timer-btn:active {
+  transform: scale(0.97);
+}
+
+.quote-box {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.quote-text {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #1d1d1f;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  font-weight: 300;
+}
+
+.quote-author {
+  text-align: right;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #86868b;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+}
