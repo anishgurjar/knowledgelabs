@@ -1,0 +1,4 @@
+
+=== Logging Started===
+[2025-08-23 17:38:30] First message 
+[2025-08-23 17:38:30] second message 

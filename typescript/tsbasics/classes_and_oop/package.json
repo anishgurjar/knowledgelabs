@@ -1,0 +1,20 @@
+{
+  "name": "object_and_interfaces",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:src": "prettier --write src/**/*.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
