@@ -1,0 +1,11 @@
+{
+  "node_version": "20",
+  "dockerfile_lines": [],
+  "dependencies": ["."],
+  "graphs": {
+    "loai-supervisor": "./src/loai-supervisor/graph.ts:graph",
+    "loai-hr": "./src/loai-hr/graph.ts:graph",
+    "loai-underwriting": "./src/loai-underwriting/graph.ts:graph"
+  },
+  "env": ".env"
+}

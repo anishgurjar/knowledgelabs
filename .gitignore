@@ -24,6 +24,21 @@ jspm_packages/
 .env.test.local
 .env.production.local
 
+
+# Python virtual environments
+.venv/
+venv/
+env/
+**/.venv/
+**/venv/
+**/env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyd
+.mypy_cache/
+
 # Logs
 logs
 *.log
