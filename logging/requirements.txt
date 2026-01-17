@@ -1,0 +1,4 @@
+colorlog
+python-json-logger
+python-dotenv
+

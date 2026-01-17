@@ -1,0 +1,63 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+      "colored": {
+        "()": "colorlog.ColoredFormatter",
+        "format": "%(log_color)s%(levelname)s%(reset)s: %(message)s",
+        "log_colors": {
+          "DEBUG": "cyan",
+          "INFO": "green",
+          "WARNING": "yellow",
+          "ERROR": "red",
+          "CRITICAL": "red,bg_white"
+        }
+      },
+      "json": {
+        "()": "pythonjsonlogger.jsonlogger.JsonFormatter",
+        "format": "%(asctime)s %(name)s %(levelname)s %(message)s"
+      }
+    },
+    "filters": {
+      "development_filter": {
+        "()": "filters.DevelopmentFilter"
+      },
+      "production_filter": {
+        "()": "filters.ProductionFilter"
+      }
+    },
+    "handlers": {
+      "stdout_colored": {
+        "level": "DEBUG",
+        "class": "logging.StreamHandler",
+        "formatter": "colored",
+        "stream": "ext://sys.stdout",
+        "filters": ["development_filter"]
+      },
+      "stdout_json": {
+        "level": "DEBUG",
+        "class": "logging.StreamHandler",
+        "formatter": "json",
+        "stream": "ext://sys.stdout",
+        "filters": ["production_filter"]
+      },
+      "file": {
+        "level": "DEBUG",
+        "class": "logging.handlers.RotatingFileHandler",
+        "formatter": "json",
+        "filename": "logs/my_app.log",
+        "maxBytes": 1000000,
+        "backupCount": 3
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "DEBUG",
+        "handlers": [
+          "stdout_colored",
+          "stdout_json",
+          "file"
+        ]
+      }
+    }
+  }

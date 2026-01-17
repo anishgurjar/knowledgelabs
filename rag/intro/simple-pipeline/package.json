@@ -1,0 +1,27 @@
+{
+  "name": "simple-pipeline",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.3.57",
+    "@langchain/core": "^0.3.78",
+    "langchain": "^0.3.35",
+    "pdf-parse": "^1.1.1",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.6"
+  }
+}
