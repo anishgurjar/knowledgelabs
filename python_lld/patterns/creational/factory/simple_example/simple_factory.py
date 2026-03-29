@@ -1,44 +1,45 @@
-from typing import Protocol
+from enum import Enum
+from abc import ABC, abstractmethod
+class ExporterType(Enum):
+    CSV = "csv"
+    JSON = "json"
+    PARQUET = "parquet"
 
-class Notification(Protocol):
-    def send(message:str) -> None:
-        ...
+class Exporter(ABC):
 
-class EmailNotification(Notification):
-    def send(message:str) -> None:
-        print("message sent from email")
+    @abstractmethod
+    def export(self, data: list[dict]) -> str:
+        pass
+
+class CSVExporter(Exporter):
+
+    def export(self, data: list[dict]) -> str:
+        return f"data exported from CSV : {data}"
     
-class SMSNotification(Notification):
-    def send(message:str) -> None:
-        print("message sent from sms")
+class JSONExporter(Exporter):
 
-class PushNotification(Notification):
-    def send(message:str) -> None:
-        print("message sent from push")
-
-
-class NotifcationFactory:
-
-    #simple hardcoded if else statement. decent factory but does violate open closed principle.
+    def export(self, data: list[dict]) -> str:
+        return f"data exported from JSON : {data}"
     
-    def create_notification(self, channel: str):
-        
-        _notification_channel: Notification
+class ParquetExporter(Exporter):
 
-        if(channel == "email"):
-            self.notification_channel = EmailNotification()
-        
-        elif(channel == "sms"):
-            self.notification_channel = SMSNotification()
-        
-        elif(channel == "push"):
-            self.notification_channel = PushNotification()
-
-        raise ValueError("Unknown Channel")
+    def export(self, data: list[dict]) -> str:
+        return f"data exported from parquet : {data}"
     
-    def send(self, message:str):
-        self.notification_channel.send(message)
+class ExporterFactory:
+    @staticmethod
+    def create(exporter_type: ExporterType) -> Exporter:
+        
+        if exporter_type == ExporterType.CSV:
+            return CSVExporter()
+        elif exporter_type == ExporterType.JSON:
+            return JSONExporter()
+        elif exporter_type == ExporterType.PARQUET:
+            return ParquetExporter()
+        else:
+            raise ValueError(f"Unsupported exporter type: {exporter_type}")
 
-factory = NotifcationFactory()
-n1 = factory.create_notification("email")
-n1.send("hi there")
+
+csv_exporter = ExporterFactory.create(ExporterType.CSV)
+
+print(csv_exporter.export([{1: "one"}, {2: "two"}]))

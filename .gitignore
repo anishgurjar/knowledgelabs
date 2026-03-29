@@ -77,3 +77,6 @@ package-lock.json
 yarn.lock
 
 pytest_cache/
+
+# Neo4j Docker volume / local database files (large binaries; regenerate via compose)
+graphdb/**/neo4j/data/
