@@ -1,0 +1,122 @@
+[
+    {
+      "customer_id": "CUST001",
+      "customer_name": "Target",
+      "month": "2026-01",
+      "target_fill_rate": 0.9,
+      "penalty_rate": 0.01,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Base contract"
+    },
+    {
+      "customer_id": "CUST001",
+      "customer_name": "Target",
+      "month": "2026-02",
+      "target_fill_rate": 0.92,
+      "penalty_rate": 0.012,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Seasonal event uplift"
+    },
+    {
+      "customer_id": "CUST001",
+      "customer_name": "Target",
+      "month": "2026-03",
+      "target_fill_rate": 0.94,
+      "penalty_rate": 0.015,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Endcap month"
+    },
+    {
+      "customer_id": "CUST002",
+      "customer_name": "Walmart",
+      "month": "2026-01",
+      "target_fill_rate": 0.85,
+      "penalty_rate": 0.02,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Standard allowance pressure"
+    },
+    {
+      "customer_id": "CUST002",
+      "customer_name": "Walmart",
+      "month": "2026-03",
+      "target_fill_rate": 0.87,
+      "penalty_rate": 0.022,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Regional routing penalties"
+    },
+    {
+      "customer_id": "CUST003",
+      "customer_name": "Costco",
+      "month": "2026-01",
+      "target_fill_rate": 0.95,
+      "penalty_rate": 0.018,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Club service level"
+    },
+    {
+      "customer_id": "CUST003",
+      "customer_name": "Costco",
+      "month": "2026-03",
+      "target_fill_rate": 0.95,
+      "penalty_rate": 0.02,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Higher spring service expectation"
+    },
+    {
+      "customer_id": "CUST004",
+      "customer_name": "Kroger",
+      "month": "2026-02",
+      "target_fill_rate": 0.88,
+      "penalty_rate": 0.014,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Flexible local program"
+    },
+    {
+      "customer_id": "CUST005",
+      "customer_name": "Whole Foods",
+      "month": "2026-02",
+      "target_fill_rate": 0.93,
+      "penalty_rate": 0.025,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Premium perishables"
+    },
+    {
+      "customer_id": "CUST006",
+      "customer_name": "Publix",
+      "month": "2026-03",
+      "target_fill_rate": 0.9,
+      "penalty_rate": 0.013,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Standard southeast terms"
+    },
+    {
+      "customer_id": "CUST007",
+      "customer_name": "Amazon Fresh",
+      "month": "2026-03",
+      "target_fill_rate": 0.91,
+      "penalty_rate": 0.03,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Fast-turn freshness SLA"
+    },
+    {
+      "customer_id": "CUST008",
+      "customer_name": "Albertsons",
+      "month": "2026-03",
+      "target_fill_rate": 0.89,
+      "penalty_rate": 0.017,
+      "penalty_basis": "SHORTFALL_VALUE",
+      "currency": "USD",
+      "notes": "Frozen assortment rollout"
+    }
+  ]

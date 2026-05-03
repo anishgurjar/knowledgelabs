@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/anishgurjar/.cursor/extensions/**)",
+      "Read(//Users/anishgurjar/.vscode/extensions/**)"
+    ]
+  }
+}

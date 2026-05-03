@@ -1,0 +1,13 @@
+po_id,customer_id,customer_name,distributor_id,distributor_name,po_date,requested_ship_date,month,status,currency,shipping_origin,shipping_destination,priority,notes
+PO1001,CUST001,Target,DIST001,UNFI,2026-01-03,2026-01-10,2026-01,OPEN,USD,Columbus OH,Minneapolis MN,HIGH,"Seasonal promo run"
+PO1002,CUST002,Walmart,DIST002,McLane,2026-01-04,2026-01-12,2026-01,OPEN,USD,Dallas TX,Bentonville AR,MEDIUM,"Standard replenishment"
+PO1003,CUST003,Costco,DIST003,KeHE,2026-01-05,2026-01-14,2026-01,OPEN,USD,Fresno CA,Issaquah WA,HIGH,"Club pack launch"
+PO1004,CUST001,Target,DIST001,UNFI,2026-02-01,2026-02-08,2026-02,OPEN,USD,Columbus OH,Chicago IL,CRITICAL,"Valentine's feature placement"
+PO1005,CUST004,Kroger,DIST004,C&S Wholesale,2026-02-02,2026-02-09,2026-02,PARTIAL,USD,Cincinnati OH,Cincinnati OH,LOW,"Late inbound ingredients"
+PO1006,CUST005,Whole Foods,DIST005,KeHE,2026-02-03,2026-02-11,2026-02,OPEN,USD,Austin TX,Austin TX,MEDIUM,"Regional organic assortment"
+PO1007,CUST002,Walmart,DIST002,McLane,2026-03-01,2026-03-07,2026-03,HOLD,USD,Dallas TX,Phoenix AZ,HIGH,"Awaiting routing confirmation"
+PO1008,CUST006,Publix,DIST006,UNFI,2026-03-02,2026-03-09,2026-03,OPEN,USD,Atlanta GA,Lakeland FL,MEDIUM,"Southeast expansion"
+PO1009,CUST003,Costco,DIST003,KeHE,2026-03-03,2026-03-10,2026-03,CANCELLED,USD,Fresno CA,San Diego CA,LOW,"Customer canceled one lane"
+PO1010,CUST001,Target,DIST001,UNFI,2026-03-04,2026-03-12,2026-03,OPEN,USD,Columbus OH,Columbus OH,CRITICAL,"Endcap commitment"
+PO1011,CUST007,Amazon Fresh,DIST007,Lineage,2026-03-05,2026-03-13,2026-03,OPEN,USD,Newark NJ,New York NY,HIGH,"Fast-turn urban DC"
+PO1012,CUST008,Albertsons,DIST008,C&S Wholesale,2026-03-06,2026-03-15,2026-03,OPEN,USD,Boise ID,Denver CO,MEDIUM,"Mountain region restock"

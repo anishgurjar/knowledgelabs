@@ -1,0 +1,19 @@
+[project]
+name = "file-handling"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Anish Gurjar",email = "50738829+anishgurjar@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic (>=2.12.5,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "file_handling", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
